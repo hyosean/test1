@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+/* reset */
+* {  margin:0; padding:0;  }
+ul,ol,li {list-style: none;}
+a {text-decoration: none;outline: 1;}
+img {vertical-align: top;}
+
+/* article */
+.background {background: #000;width: 100vw;height: 100vh;
+  }
+.background_img {
+ position: fixed; top: 0; left:0;right: 0;  width: 100vw;height: 100vh;
+ background: url(../img/best-jazz-songs.jpg)no-repeat center center;
+ background-size: cover;
+ opacity: 0.4; transition: all 0.5s;
+}
+
+/* wrap1 */
+.wrap1 { 
+    width: 800px; height:400px; 
+    position: absolute; top:50%;left:50%; transform: translate(-50%,-50%);
+}
+.top {
+    width:0%; height:1px;position: absolute; top:0;left: 0;
+    background: goldenrod;
+}
+.right {
+    width:1px; height:0%;position: absolute; top:0;right: 0;
+    background: goldenrod;
+}
+.bottom {
+    width:0%; height:1px;position: absolute; bottom:0;right: 0;
+    background: goldenrod;
+}
+.left {
+    width:1px; height:0%;position: absolute; bottom:0;left: 0;
+    background: goldenrod;
+}
+.content {
+    background: #000; display: none; width: 100%;height:100%;
+}
+.content > video {
+    width:100%;height:100%;
+}
+
+.closeBtn1 { 
+    color:#fff;font: bold 12px/1 'arial'; position: absolute;top:10px;right:10px; opacity: 0.4;
+}
+
+/* wrap2 */
+.wrap2 {
+    position: absolute;top:50%;left: 0; transform: translateY(-50%);
+    display: none; width: 100%;height: 400px; background: #000;
+}
+.closeBtn2 {
+    color:#fff;font: bold 12px/1 'arial'; position: absolute;top:10px;right:10px; opacity: 0.4;   
+}
+
+
+/* btn */
+.btnWrap {
+    position: absolute;top:50%;left: 50%;transform: translate(-50%,-50%);
+    margin-top: 250px;
+}
+.btn1 {
+    display: block; width: 330px; height:40px;text-align: center;color:goldenrod;
+font: 20px/40px 'arial';float: left;border:1px solid goldenrod;margin-right: 50px;transition: all 0.5s;
+}
+.btn1.on {
+   color:rgba(0, 0, 0, 0.877);font: 20px/40px 'arial';border:none;background: goldenrod;font-weight: bold;
+}
+
+.btn2 {
+    display: block; width: 330px; height:40px;text-align: center;color:goldenrod;
+    font: 20px/40px 'arial';float: right;border:1px solid goldenrod;
+}
+
+.btn2.on {
+    color:rgba(0, 0, 0, 0.877);font: 20px/40px 'arial';border:none;background: goldenrod;font-weight: bold;
+ }
